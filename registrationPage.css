@@ -78,3 +78,8 @@ button:hover {
     background-color: #444;
 } */
 
+form a {
+    text-decoration: none;
+    color: #243b55;
+    font-weight: bold;
+}
