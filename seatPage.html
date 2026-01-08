@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Seat Selection</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.screen {
+    background: #ccc;
+    height: 20px;
+    border-radius: 0 0 40px 40px;
+    margin: 15px 0;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.seat {
+    display: none;
+}
+
+.seat + label {
+    border: 2px solid #4caf50;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.seat:checked + label {
+    background: #4caf50;
+    color: #fff;
+}
+
+/* Vehicle display */
+.vehicle {
+    font-size: 60px;
+    display: none;
+}
+
+#s1:checked ~ .v1,
+#s2:checked ~ .v2,
+#s3:checked ~ .v3,
+#s4:checked ~ .v4,
+#s5:checked ~ .v5,
+#s6:checked ~ .v6,
+#s7:checked ~ .v7,
+#s8:checked ~ .v8,
+#s9:checked ~ .v9,
+#s10:checked ~ .v10 {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Select Seats</h2>
+
+    <div class="screen">SCREEN</div>
+
+    <!-- Seat selection -->
+    <div class="seats">
+        <input type="checkbox" class="seat" id="A1"><label for="A1">1</label>
+        <input type="checkbox" class="seat" id="A2"><label for="A2">2</label>
+        <input type="checkbox" class="seat" id="A3"><label for="A3">3</label>
+        <input type="checkbox" class="seat" id="A4"><label for="A4">4</label>
+        <input type="checkbox" class="seat" id="A5"><label for="A5">5</label>
+        <input type="checkbox" class="seat" id="A6"><label for="A6">6</label>
+        <input type="checkbox" class="seat" id="A7"><label for="A7">7</label>
+        <input type="checkbox" class="seat" id="A8"><label for="A8">8</label>
+        <input type="checkbox" class="seat" id="A9"><label for="A9">9</label>
+        <input type="checkbox" class="seat" id="A10"><label for="A10">10</label>
+    </div>
+
+    <!-- Seat count selection -->
+    <p><b>Select number of seats</b></p>
+    <input type="radio" name="seats" id="s1">1
+    <input type="radio" name="seats" id="s2">2
+    <input type="radio" name="seats" id="s3">3
+    <input type="radio" name="seats" id="s4">4
+    <input type="radio" name="seats" id="s5">5
+    <input type="radio" name="seats" id="s6">6
+    <input type="radio" name="seats" id="s7">7
+    <input type="radio" name="seats" id="s8">8
+    <input type="radio" name="seats" id="s9">9
+    <input type="radio" name="seats" id="s10">10
+
+    <!-- Vehicles -->
+    <div class="vehicle v1">🚲<br>Cycle</div>
+    <div class="vehicle v2">🏍️<br>Bike</div>
+    <div class="vehicle v3">🛺<br>Auto</div>
+    <div class="vehicle v4">🚗<br>Car</div>
+    <div class="vehicle v5">🚗<br>Car</div>
+    <div class="vehicle v6">🚐<br>Van</div>
+    <div class="vehicle v7">🚐<br>Van</div>
+    <div class="vehicle v8">🚌<br>Bus</div>
+    <div class="vehicle v9">🚌<br>Bus</div>
+    <div class="vehicle v10">🚌<br>Bus</div>
+</div>
+
+</body>
+</html>
