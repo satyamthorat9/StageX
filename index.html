@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StageX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ["Playfair Display"],
+              body: ["Inter"],
+            },
+            colors: {
+              gold: "#D4AF37",
+              dark: "#0B0F1A",
+              card: "#111827",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-dark text-gray-200 font-body">
+    <header
+      class="sticky top-0 z-50 bg-dark px-8 py-4 flex items-center gap-6 shadow-lg"
+    >
+      <h1 class="text-gold font-heading text-2xl">StageX</h1>
+
+      <input
+        type="search"
+        placeholder="Search for movies, events, plays, sports... "
+        class="flex-1 bg-card text-sm px-5 py-2 rounded-full outline-none focus:ring-2 focus:ring-gold"
+      />
+
+
+      <a href="loginPage.html">
+      <button
+        class="border border-gold px-2 py-2 rounded-full hover:bg-gold hover:text-black transition"
+      >
+        Login 
+      </button>
+      </a>
+      <button
+      class="border border-gold px-2 py-4 rounded-full hover:bg-gold hover:text-black transition"
+    >
+      Sign up
+    </button>
+    </header>
+    <section class="px-8 py-6 flex gap-6 text-sm border-b border-white/10">
+      <span class="text-gold cursor-pointer">All</span>
+      <span class="hover:text-gold cursor-pointer">Movies</span>
+      <span class="hover:text-gold cursor-pointer">Comedy</span>
+      <span class="hover:text-gold cursor-pointer">Music</span>
+      <span class="hover:text-gold cursor-pointer">Theatre</span>
+    </section>
+
+    <div class="px-6 py-10">
+      <div class="relative h-72 rounded-2xl overflow-hidden bg-black">
+        <img
+          src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+          class="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div class="relative p-8">
+          <h2 class="text-4xl font-heading">
+            Experience <span class="text-gold">Live Shows</span>
+          </h2>
+          <p class="mt-3 text-gray-300">Book concerts, comedy & more</p>
+
+          <button class="mt-4 bg-gold text-black px-6 py-2 rounded-full hover:size-18">
+            Book Now
+          </button>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="px-6 py-3">
+      <h3 class="text-xl font-heading mb-2">Recommended For You</h3>
+    
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-2">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4zLzEwICAyODVLKyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00452447-pjrjvlcdvl-portrait.jpg"> 
+      <br>  <a href="/movies/dhurandhar/ET00452447" class="bwcsc-1jgpgcm-4 iSszaU">Dhurandhar</a>
+         <!-- <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4zLzEwICAyODVLKyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00452447-pjrjvlcdvl-portrait.jpg"> 
+      <br>  <a href="/movies/dhurandhar/ET00452447" class="bwcsc-1jgpgcm-4 iSszaU">Dhurandhar</a>"> 
+       -->
+
+
+
+    <br>
+    <footer class="px-8 py-10 text-sm text-gray-400 border-t border-white/10">
+      © 2025 StageX.
+    </footer>
+  </body>
+</html>
